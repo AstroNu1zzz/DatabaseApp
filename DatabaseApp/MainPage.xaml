@@ -21,6 +21,14 @@ Spacing="10">
     x:Name="GrupoEntry"
     Placeholder="Grupo"/>
 
+            <Entry
+    x:Name="RFCEntry"
+    Placeholder="RFC"/>
+
+            <Entry
+    x:Name="NumeroEntry"
+    Placeholder="Numero"/>
+
             <Button
     Text="Guardar"
     Clicked="OnGuardarClicked"/>
@@ -40,6 +48,12 @@ Spacing="10">
                             <Label
                     Text="{Binding Grupo}"/>
 
+                            <Label
+                    Text="{Binding RFC}"/>
+
+                            <Label
+                    Text="{Binding Numero}"/>
+
                         </VerticalStackLayout>
 
                     </DataTemplate>
@@ -48,7 +62,7 @@ Spacing="10">
 
             </CollectionView>
 
-        </VerticalStackLayout> t>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

@@ -27,13 +27,17 @@ namespace DatabaseApp
             Estudiante estudiante = new()
             {
                 Nombre = NombreEntry.Text,
-                Grupo = GrupoEntry.Text
+                Grupo = GrupoEntry.Text,
+                RFC = RFCEntry.Text,
+                Numero = Convert.ToInt32(NumeroEntry.Text)
             };
 
             await database.Guardar(estudiante);
 
             NombreEntry.Text = "";
             GrupoEntry.Text = "";
+            RFCEntry.Text = "";
+            NumeroEntry.Text = "";
 
             EstudiantesCollection.ItemsSource =
                 await database.ObtenerTodos();
