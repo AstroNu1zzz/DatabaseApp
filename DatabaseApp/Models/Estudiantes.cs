@@ -12,5 +12,5 @@ public class Estudiante
     public string Nombre { get; set; }
     public string Grupo { get; set; }
     public string RFC { get; set; }
-    public int Numero { get; set; }
+    public string Numero { get; set; }
 }

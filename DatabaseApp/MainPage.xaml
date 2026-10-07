@@ -33,8 +33,16 @@ Spacing="10">
     Text="Guardar"
     Clicked="OnGuardarClicked"/>
 
+            <Button
+        Text="Eliminar"
+        Clicked="OnEliminarClicked"/>
+
+
             <CollectionView
-    x:Name="EstudiantesCollection">
+    x:Name="EstudiantesCollection"
+                SelectionMode="Single"
+SelectionChanged="OnSelectionChanged">
+                >
 
                 <CollectionView.ItemTemplate>
 
